@@ -1,0 +1,30 @@
+SINGLE RESPONSIBILITY PRINCIPLE
+
+Cohesion and Coupling
+"Cohesion is the degree to which the various parts of a software component are related"
+"Higher cohesion helps attain better adherence to the Single Responsibility Principle"
+Aim for high cohesion - extract out methods with high cohesion to their own class
+
+"Coupling is defined as the level of interdependency between various software components"
+"Loose coupling helps attain better adherence to the Single Responsibility Principle"
+Aim for loose coupling - extract out methods with high cohesion to their own class
+
+
+Reasons for change
+"Every software component should have one and only one responsibility"
+"Every software component should have one and only one reason to change" - Uncle Bob
+Every change to a software component opens up the possibility to introduce bugs and more time and effort to re-test
+
+1. Start writing down the possible reasons why your software component may change
+2. Extract out methods with high cohesion to their own class
+3. High cohesion between a classes methods equates to a single reason to change
+
+
+The employee class has 3 reasons to change
+1. Changes in employee attributes
+2. Changes in Database
+3. Changes in Tax Calculation
+
+Tasks:
+Extract save method out to its own class - a repository class
+Extract calculateTax method out to its own class - tax calculation class
